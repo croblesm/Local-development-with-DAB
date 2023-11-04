@@ -1,0 +1,27 @@
+### Get all Customers
+GET https://127.0.0.1:5001/api/Customer
+
+### Get customer details when customer id = 1 
+GET https://127.0.0.1:5001/api/Customer/CustomerID/1 
+
+### Get customers first and last name
+GET https://127.0.0.1:5001/api/Customer?$select=FirstName,LastName
+
+### Get customers details when fist name = Orlando
+GET https://127.0.0.1:5001/api/Customer?$filter=FirstName eq 'Orlando'
+
+### Get customers first and last name. Ordered by first name descending
+GET https://127.0.0.1:5001/api/Customer?$orderby=FirstName desc ,LastName
+
+### Get first five customers
+GET https://127.0.0.1:5001/api/Customer?$first=5
+###
+
+### Update customer's info
+PATCH https://127.0.0.1:5001/api/Customer/CustomerID/1 
+Content-type: application/json
+
+{  
+  "FirstName": "Rick",
+  "LastName": "Deckard"
+}
