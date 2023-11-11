@@ -54,9 +54,16 @@ sqlcmd config connection-strings
 
 ### Use DAB to create the backend (REST and GraphQL endpoints)
 
+> Do not forget to update the connection string in the dab-config.json file
+
 ```bash
+# Create a new DAB project (config file)
 dab init --database-type mssql  --config "dab-config.json" --host-mode Development
+
+# Modify dab-config.json with connection string
 dab add Customer --config dab-config.json --source SalesLT.Customer --permissions "anonymous:*"
+
+# Start DAB's engine
 dab start --config dab-config.json
 ```
 
