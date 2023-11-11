@@ -1,3 +1,5 @@
+### Using REST Client VS Code Extension (https://github.com/Huachao/vscode-restclient)
+
 ### Get all Customers
 GET https://127.0.0.1:5001/api/Customer
 
