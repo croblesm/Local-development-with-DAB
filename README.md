@@ -1,5 +1,5 @@
 # Local development with DAB (Data API Builder)
-> Using Docker, SQL Server, .NET 6.0 and Data API Builder (DAB)
+> Using SQL Containers (Go-SQLCmd), Data API Builder (DAB) and.NET 6.0
 
 ## Prerequisites
 
